@@ -1,21 +1,13 @@
 // Correspond à la fonction Trouve disponible
-FONCTION ENTIER RechercheFilm(Chaine: nomRecherche)
+FONCTION Tri-insertion (Tableau T)
     VARIABLE
-        ENTIER: i <- 0
-        BOOLEAN: nonTrouve <- VRAI
+        ENTIER: x <- T[i]
+         j ← i    
     DEBUT
-        FAIRE
-            SI noms[i] = nomRecherche ALORS
-                nonTrouve = FAUX
-            SINON
-                i <- i + 1
-            FINSI
-        TANTQUE nonTrouve Et i < NB_FILM
-
-        SI nonTrouve ALORS
-            i <- NULL
-        FINSI
-
+        TANTQUE j > 0 et  T[j-1] > x
+                T[j] <- T[j-1]
+                j <- j-1 
+                T[j] <- x
         Retourne i
     FIN
 FINFONCTION
