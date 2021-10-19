@@ -1,14 +1,20 @@
-// Correspond à la fonction du Tri Sélection 
+// Correspond à la fonction Tri Sélection 
 FONCTION ENTIER TriSélection(Tableau T)
     VARIABLE
-        ENTIER: N <- 0
+        ENTIER: i <- 0
+        ENTIER: v <- 0
+        ENTIER: pos <- 0
+        ENTIER: min <- 0
         POUR i variant de 0 à N-2 
-        Min <- i
+        pos <- i
                 POUR v variant de i+1 à N-1        
-                    SI T(v) < T(Min), alors Min <- v
+                    SI T(v) < T(pos), alors pos <- v
                     FINSI
                 FINPOUR
-            SI Min != i, ALORS échanger t[i] et t[min]
+                Min <- T(pos)
+                T(pos) <- T(i)
+                T(i) <- Min
             FINSI
+            RETOURNER Tableau(T)
         FINPOUR
 FINFONCTION 
