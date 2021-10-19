@@ -1,21 +1,14 @@
-// Correspond à la fonction Trouve disponible
-FONCTION ENTIER RechercheFilm(Chaine: nomRecherche)
+// Correspond à la fonction du Tri Sélection 
+FONCTION ENTIER TriSélection(Tableau T)
     VARIABLE
-        ENTIER: i <- 0
-        BOOLEAN: nonTrouve <- VRAI
-    DEBUT
-        FAIRE
-            SI noms[i] = nomRecherche ALORS
-                nonTrouve = FAUX
-            SINON
-                i <- i + 1
+        ENTIER: N <- 0
+        POUR i variant de 0 à N-2 
+        Min <- i
+                POUR v variant de i+1 à N-1        
+                    SI T(v) < T(Min), alors Min <- v
+                    FINSI
+                FINPOUR
+            SI Min != i, ALORS échanger t[i] et t[min]
             FINSI
-        TANTQUE nonTrouve Et i < NB_FILM
-
-        SI nonTrouve ALORS
-            i <- NULL
-        FINSI
-
-        Retourne i
-    FIN
+        FINPOUR
 FINFONCTION 
