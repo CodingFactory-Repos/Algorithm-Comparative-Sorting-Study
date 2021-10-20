@@ -1,7 +1,7 @@
 // Import Arrays
 import java.util.Arrays;
 
-public class Main {
+public class Iteratif {
 
     public static void main(String[] args) {
         // write your code here
@@ -11,8 +11,7 @@ public class Main {
         // Tableau de test
         int[] tableau = { 1, 3, 7, 2, 6, 4, 5, 8, 10, 9 };
 
-        System.out.println("Tableau de test : "+Arrays.toString(triBulle(tableau)));
-
+        triBulle(tableau);
     }
 
     public static int[] triBulle(int [] tableau) {
@@ -29,8 +28,9 @@ public class Main {
                 }
             }
         }
-
-        // Return le resultat
+        
+        System.out.println(Arrays.toString(tableau));
+        
         return tableau;
     }
 }
