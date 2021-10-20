@@ -1,7 +1,7 @@
 import java.util.Arrays;
 public class Main {
      public static void main(String[] args) {
-          System.out.print("\033[H\033[2J");
+          System.out.print("\033\033");
   
           int[] tableau = { 1, 3, 7, 2, 6, 4, 5, 8, 10, 9 };
   
