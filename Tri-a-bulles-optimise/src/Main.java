@@ -1,6 +1,4 @@
 // Import Arrays
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Arrays;
 
 public class Main {
@@ -8,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         // Clear console
-        System.out.print("\033[H\033[2J");
+        System.out.print("\033\033");
 
         // Tableau de test
         int[] tableau = { 1, 3, 7, 2, 6, 4, 5, 8, 10, 9 };
@@ -17,7 +15,7 @@ public class Main {
 
     }
 
-    public static int[] triBulle(int @NotNull [] tableau) {
+    public static int[] triBulle(int [] tableau) {
         int n = tableau.length;
         boolean echange = true;
         while (echange) {
