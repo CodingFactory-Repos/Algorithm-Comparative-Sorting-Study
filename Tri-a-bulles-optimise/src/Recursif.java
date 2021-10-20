@@ -2,7 +2,7 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class Iteratif {
+public class Recursif {
 
     public static void main(String[] args) {
         // write your code here
@@ -19,19 +19,16 @@ public class Iteratif {
 
     public static int[] triBulle(int [] tableau) {
         int n = tableau.length;
-        boolean echange = true;
-        while (echange) {
-            echange = false;
-            for (int i = 0; i < n - 1; i++) {
-                if (tableau[i] > tableau[i + 1]) {
-                    int temp = tableau[i];
-                    tableau[i] = tableau[i + 1];
-                    tableau[i + 1] = temp;
-                    echange = true;
-                }
+   
+        for (int i = 0; i < n - 1; i++) {
+            if (tableau[i] > tableau[i + 1]) {
+                int temp = tableau[i];
+                tableau[i] = tableau[i + 1];
+                tableau[i + 1] = temp;
+                return triBulle(tableau);
             }
         }
-        
+ 
         return tableau;
     }
 }

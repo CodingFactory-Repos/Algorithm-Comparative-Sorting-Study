@@ -29,7 +29,6 @@ FONCTION ENTIER TriBulle( tableau : INT )
             FIN POUR
         FIN TANT QUE
 
-        ECRIRE tableau
         RETOURNER tableau
         
     FIN
