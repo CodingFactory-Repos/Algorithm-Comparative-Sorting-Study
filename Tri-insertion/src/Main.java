@@ -5,7 +5,7 @@ public class Main {
   
           int[] tableau = { 1, 3, 7, 2, 6, 4, 5, 8, 10, 9 };
   
-          System.out.println("Tableau de test : "+Arrays.toString(tri(tableau)));
+          System.out.println("Tableau de test : " + Arrays.toString(tri(tableau)));
   
       }
      
