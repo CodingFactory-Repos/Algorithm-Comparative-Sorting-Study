@@ -26,12 +26,12 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         // Clear console
-        System.out.print("\033[H\033[2J");
+        System.out.print("\033\033");
 
         // Tableau de test
         int[] tableau = { -1,6,29,9,7,8,5,-3,4,2,1,30,-30};
 
-        System.out.println("Tableau de test : "+Arrays.toString(selectedSort(tableau)));
+        System.out.println("Tableau de test : " + Arrays.toString(selectedSort(tableau)));
 
     }
 }
