@@ -1,5 +1,6 @@
 // Import Arrays
 import java.util.Arrays;
+import java.util.Random;
 
 public class Iteratif {
 
@@ -7,9 +8,11 @@ public class Iteratif {
         // write your code here
         // Clear console
         System.out.print("\033\033");
+        
+        Random rand = new Random();
 
         // Tableau de test
-        int[] tableau = { 1, 3, 7, 2, 6, 4, 5, 8, 10, 9 };
+        int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
 
         triBulle(tableau);
     }
