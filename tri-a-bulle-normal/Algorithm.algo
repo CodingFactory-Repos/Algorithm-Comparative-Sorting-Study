@@ -1,0 +1,26 @@
+
+
+    FONCTION tri-bulle tableau de 1 a n
+
+    DECLARER Taille = taille du tableau
+    DECLARER temporaire = 0
+    
+        POUR i allant de la taille du tableau-1 à 1 
+
+        POUR j allant de 1 à taille du tableau -i 
+
+        COMPARER 2 valeurs qui se suivent
+
+        SI Tab[j-1] > Tab[j]
+       
+        ALORS   temporaire = Tab[Tab-1]
+                Tab[j-1] = Tab[j]
+                Tab[j] = temporaire
+
+        FIN SI
+
+        FIN POUR
+
+        AFFICHER tableau
+
+    FIN
