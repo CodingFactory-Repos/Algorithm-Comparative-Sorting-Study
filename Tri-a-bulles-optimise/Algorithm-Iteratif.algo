@@ -1,34 +1,35 @@
 // Tri à bulles optimisé
-FONCTION ENTIER TriBulle(tableau: t)
+FONCTION ENTIER TriBulle( tableau : INT )
     // Définir les variables
     VARIABLE
         INT: n
         BOOLEAN: echange
+        INT: temp
     // Début de l'algorithme
     DEBUT
         // Initialisation
-        n <- TAILLE(tableau)
-        echange <- VRAI
-        temp
+        n ◄- TAILLE(tableau)
+        echange ◄- VRAI
 
         // Tant qu'il y a echange
         TANT QUE echange EST VRAI FAIRE
             // Initialisation
-            echange <- FAUX
+            echange ◄- FAUX
 
             // On parcourt le tableau
             POUR i DE 1 A n FAIRE
                 // On compare les éléments suivants
                 SI tableau[i] > tableau[i+1] ALORS
                     // On échange les valeurs
-                    temp <- tableau[i]
-                    tableau[i] <- tableau[i+1];
-                    tableau[i+1] <- temp;
-                    echange <- VRAI
+                    temp ◄- tableau[i]
+                    tableau[i] ◄- tableau[i+1];
+                    tableau[i+1] ◄- temp;
+                    echange ◄- VRAI
                 FIN SI
             FIN POUR
         FIN TANT QUE
-        RETOURNE tableau
+
+        RETOURNER tableau
+        
     FIN
 FIN FONCTION
-//  al
