@@ -1,0 +1,18 @@
+// Correspond à la fonction Tri Sélection Récursif
+    ENTRÉE     
+        ENTIER: i
+    VARIABLE
+        ENTIER: v <- 0
+        ENTIER: pos <- 0
+        ENTIER: min <- 0
+        pos <- i                        
+                    SI T(v) < T(pos) ALORS pos <- v
+                    FINSI
+                Min <- T(pos)
+                T(pos) <- T(i)
+                T(i) <- Min
+                SI i < N-2 && v < N-1 ALORS Appeler fonction TriSélectionRec()
+            FINSI
+            RETOURNER Tableau(T)
+FINFONCTION 
+     
