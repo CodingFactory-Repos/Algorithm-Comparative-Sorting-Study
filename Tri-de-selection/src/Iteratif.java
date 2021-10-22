@@ -26,7 +26,7 @@ public class Iteratif {
                     pos = v;
                     
                     comparaisons+=1;
-                    affectations+=1;
+                    affectations+=2;
                 }
                 comparaisons+=1;
             }
@@ -34,7 +34,7 @@ public class Iteratif {
             tableau[pos] = tableau[i];
             tableau[i] = min;
             echanges += 1;
-            affectations += 3;
+            affectations += 4;
         }
         return tableau;
     }
@@ -48,8 +48,8 @@ public class Iteratif {
         // Tableau de test
         
         // int[] tableau = {10,9,8,7,6,5,4,3,2,1};
-        // int[] tableau = {1,2,3,4,5,6,7,8,9,10};
-        int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
+        int[] tableau = {1,2,3,4,5,6,7,8,9,10};
+        // int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
         
         // System.out.println("Tableau d'avant fonction : " + Arrays.toString(tableau));
         // System.out.println("Tableau après fonction : " + Arrays.toString(selectedSort(tableau)));
@@ -66,9 +66,7 @@ public class Iteratif {
 
     public static void stat(int min,int max, int step, int nbr) {
         int i;
-        comparaisons = 0;
-        echanges = 0;
-        affectations = 0;
+
         for ( i = 1 ; i <= nbr ; i++) {
             int Tab[] =new Random().ints(min).toArray();
             selectedSort(Tab);
