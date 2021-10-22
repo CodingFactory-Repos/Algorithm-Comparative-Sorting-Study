@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class Main {
+public class Iteratif {
         public static float echanges = 0;
         public static float comparaisons = 0;
         public static float affectations = 0;
@@ -43,7 +43,6 @@ public class Main {
                         comparaisons++;
                 }
 
-                // System.out.println("Il y a eu " + comparaisons + " comparaisons, " + echanges + " échange et " + affectations + " affectations");
                 return tab;
         }
 
