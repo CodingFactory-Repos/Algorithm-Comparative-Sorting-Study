@@ -6,9 +6,9 @@ DEBUT
         ENTIER: v <- 0
         ENTIER: pos <- 0
         ENTIER: min <- 0
-        POUR i variant de 0 à N-2 
+        POUR i variant de 0 à La Longueur du Tableau -1
         pos <- i
-                POUR v variant de i+1 à N-1        
+                POUR v variant de i+1 à la Longueur du Tableau        
                     SI T(v) < T(pos), alors pos <- v
                     FINSI
                 FINPOUR
