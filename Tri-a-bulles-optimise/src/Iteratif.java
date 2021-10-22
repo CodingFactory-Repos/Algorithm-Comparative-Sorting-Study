@@ -16,9 +16,9 @@ public class Iteratif {
         Random rand = new Random();
 
         // Tableau de test
-        // int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
-        int[] tableau = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        // System.out.println(Arrays.toString(triBulle(tableau)));
+        int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
+        // int[] tableau = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        System.out.println(Arrays.toString(triBulle(tableau)));
         
         stat(10, 20, 5, 10);
       

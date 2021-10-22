@@ -4,6 +4,7 @@ public class Iteratif {
     public static float echanges = 0;
     public static float comparaisons = 0;
     public static float affectations = 3*echanges;
+    public static float operations;
 
 
     
@@ -40,19 +41,24 @@ public class Iteratif {
     public static void main(String[] args) {
         // write your code here
         // Clear console
-        System.out.print("\033[H\033[2J");
+        System.out.flush();
 
+        Random rand = new Random();
+        
         // Tableau de test
-         int[] tableau = {1,2,3,4,5,6,7,8,9,10};
+        
         // int[] tableau = {10,9,8,7,6,5,4,3,2,1};
         // int[] tableau = {1,2,3,4,5,6,7,8,9,10};
-
-        System.out.println("Tableau de test : " + Arrays.toString(selectedSort(tableau)));
+        int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
+        
+        System.out.println("Tableau d'avant fonction : " + Arrays.toString(tableau));
+        System.out.println("Tableau après fonction : " + Arrays.toString(selectedSort(tableau)));
         System.out.println("Comparaisons : " + comparaisons);
         System.out.println("Echanges : " + echanges);
         System.out.println("Affectations : " + affectations );
+        System.out.println("Opérations" + (echanges + affectations + comparaisons));
 
-        stat(10,20,5,10);
+        // stat(10,20,5,10);
 
     }
 
