@@ -1,17 +1,18 @@
 // Correspond à la fonction Trouve disponible
 FONCTION Tri-insertion (Tableau T)
       
-    DEBUT
+DEBUT
     taille =  taille tableau
-    Pour i = 1, i < taille , i + 1
+    POUR i = 1, i < taille , i + 1
     j = i- 1
     x = tableau[i]
-    Pour i de 1 à taille(T) - 1
         TANTQUE j => 0 et  tableau[j-1] > x
                 tableau[j] <- tableau[j-1]
                 j <- j-1 
-                tableau[j] <- x
+        FINTANQUE
+        tableau[j] <- x
+    FIN POUR
         Retourne le tableau
-    FIN
+FIN
 FINFONCTION
 
