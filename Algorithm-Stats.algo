@@ -1,0 +1,25 @@
+// Tri à bulles optimisé
+FONCTION ENTIER Stats( min : INT, max : INT, step : INT, nbr : TABLEAU )
+    // Définir les variables
+    VARIABLE
+        INT: i
+        FLOAT: comparaisons
+        FLOAT: echange
+        FLOAT: affectations
+        INT: tab[]
+    // Début de l'algorithme
+    DEBUT
+        // On parcourt le tableau
+        POUR i DE 1 A n FAIRE
+            tab <- NombreAléatoire
+            
+        FIN POUR
+
+        SI min < max ET i > nbr ALORS
+            ECRIRE "Le nombre d'affectations pour " + min + " est de " + affectations / nbr;
+            APPELER stat(min + step, max, step, nbr)
+        SINON 
+            ECRIRE "Le nombre d'affectations pour " + min + " est de " + affectations / nbr;
+        FIN SI
+    FIN
+FIN FONCTION
