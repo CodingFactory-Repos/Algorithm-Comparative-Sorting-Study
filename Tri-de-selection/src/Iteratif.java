@@ -51,14 +51,14 @@ public class Iteratif {
         int[] tableau = {1,2,3,4,5,6,7,8,9,10};
         // int[] tableau = { rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100), rand.nextInt(100) };
         
-        System.out.println("Tableau d'avant fonction : " + Arrays.toString(tableau));
-        System.out.println("Tableau après fonction : " + Arrays.toString(selectedSort(tableau)));
-        System.out.println("Comparaisons : " + comparaisons);
-        System.out.println("Echanges : " + echanges);
-        System.out.println("Affectations : " + affectations );
-        System.out.println("Opérations" + (echanges + affectations + comparaisons));
+        // System.out.println("Tableau d'avant fonction : " + Arrays.toString(tableau));
+        // System.out.println("Tableau après fonction : " + Arrays.toString(selectedSort(tableau)));
+        // System.out.println("Comparaisons : " + comparaisons);
+        // System.out.println("Echanges : " + echanges);
+        // System.out.println("Affectations : " + affectations );
+        // System.out.println("Opérations" + (echanges + affectations + comparaisons));
 
-        // stat(10,20,5,10);
+        stat(10,20,5,10);
 
     }
 
@@ -76,6 +76,8 @@ public class Iteratif {
             stat((min+step),max,step,nbr);
         } else {
             System.out.println("Le nombre d'affectations pour " + min + " est de " + affectations/nbr);
+            System.out.println("Le nombre de comparaisons est de " + comparaisons/nbr);
+            System.out.println("Le nombre d'echanges est de " + echanges/nbr);
         }
     }
 }
