@@ -1,0 +1,27 @@
+// Tri à bulles optimisé
+FONCTION ENTIER TriBulle( tableau : INT )
+    // Définir les variables
+    VARIABLE
+        INT: n
+        INT: i
+        INT: temp
+    // Début de l'algorithme
+    DEBUT
+        // Initialisation
+        n ◄- TAILLE(tableau)
+
+        // On parcourt le tableau
+        POUR i DE 1 A n FAIRE
+            // On compare les éléments suivants
+            SI tableau[i] > tableau[i+1] ALORS
+                // On échange les valeurs
+                temp ◄- tableau[i]
+                tableau[i] ◄- tableau[i+1]
+                tableau[i+1] ◄- temp
+                RETOURNER APPELER TriBulle(tableau)
+            FIN SI
+        FIN POUR
+
+        RETOURNER tableau
+    FIN
+FIN FONCTION
