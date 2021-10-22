@@ -1,17 +1,21 @@
 // Correspond à la fonction Tri Sélection Récursif
+DEBUT
     ENTRÉE     
         ENTIER: i
     VARIABLE
         ENTIER: v <- 0
         ENTIER: pos <- 0
-        ENTIER: min <- 0
-        pos <- i                        
-                    SI T(v) < T(pos) ALORS pos <- v
+        ENTIER: min <- 0         
+            SI i < La Longueur du Tableau -1 ALORS pos <- i             
+                POUR v variant de i+1 à N-1        
+                    SI T(v) < T(pos), alors pos <- v
                     FINSI
+                FINPOUR
                 Min <- T(pos)
                 T(pos) <- T(i)
                 T(i) <- Min
-                SI i < N-2 && v < N-1 ALORS Appeler fonction TriSélectionRec()
+            FINSI
+            SI  i < La Longueur du Tableau -1 ALORS Appeler fonction TriSélectionRec()
             FINSI
             RETOURNER Tableau(T)
 FINFONCTION 

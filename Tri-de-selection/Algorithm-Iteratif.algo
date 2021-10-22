@@ -15,8 +15,8 @@ DEBUT
                 Min <- T(pos)
                 T(pos) <- T(i)
                 T(i) <- Min
-            FINSI
-            RETOURNER Tableau(T)
+            
         FINPOUR
+        RETOURNER Tableau(T)
 FIN
 
