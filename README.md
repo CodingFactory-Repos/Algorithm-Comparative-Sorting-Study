@@ -2,6 +2,9 @@
 # Comparative sorting study in algorithms
 📒 - Exercise to learn to do comparative sorting with algorithms
 
+## CodeFactor Rating
+[![CodeFactor](https://www.codefactor.io/repository/github/codingfactory-repos/algorithm-comparative-sorting-study/badge)](https://www.codefactor.io/repository/github/codingfactory-repos/algorithm-comparative-sorting-study)
+
 ## Contributing
 This repository is the result of a school exercise. It is therefore unnecessary to contribute to this project.
 
